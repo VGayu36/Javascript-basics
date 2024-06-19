@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript basics</title>    
+    </head>
+    <body>
+        <section>
+            <h1>Displaying numbers from 1 to 100</h1>
+            <script>
+                for(var i = 1; i<=100; i++)
+                {
+                    document.write(i+ "<br>")
+    
+                }
+            </script>
+        </section>
+
+            <section>
+                <h1>Displaying Odd numbers from 1 to 100</h1>
+                <script>
+                    for(var i=1; i<=100; i++)
+                    {
+                        if (i%2!=0)
+                        {
+                            document.write(i+ "<br>")
+                        }
+                    }
+                </script>
+            </section>
+
+            <section>
+                <h1>Displaying Even numbers from 1 to 100</h1>
+                <script>
+                    for(var i=1; i<=100; i++)
+                    {
+                        if (i%2==0)
+                        {
+                            document.write(i+ "<br>")
+                        }
+                    }
+                </script>
+            </section>
+
+            <section>
+                <h1>Displaying Prime numbers from 1 to 100</h1>
+                <script>
+                    for(var i=1; i<=100; i++)
+                    {
+                        var flag=0;
+                        for(var j=2; j<=i/2; j++)
+                        {
+                            if(i%j==0)
+                            {
+                                flag=1;
+                                break;
+                            }
+                        }
+                        if (flag==0)
+                        {
+                            document.write(i+"<br>")
+                        }
+                    }
+                </script>
+            </section>
+
+    </body>
+</html>
